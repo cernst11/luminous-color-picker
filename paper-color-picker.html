@@ -7,7 +7,7 @@ Material Design: Color picker inspired by <a href="http://www.google.com/design/
 Example:
 
     <paper-color-picker id="picker"></paper-color-picker>
-    
+
 and to open the dialog
 
     this.$.picker.open();
@@ -17,6 +17,7 @@ and to open the dialog
 <link href="../polymer/polymer.html" rel="import">
 <link href="../iron-flex-layout/iron-flex-layout.html" rel="import">
 <link href="../paper-slider/paper-slider.html" rel="import">
+<link href="../paper-card/paper-card.html" rel="import">
 <link href="../paper-dialog/paper-dialog.html" rel="import">
 <link href="../paper-button/paper-button.html" rel="import">
 <link href="../paper-input/paper-input.html" rel="import">
@@ -28,7 +29,7 @@ and to open the dialog
 
 <style>
   html /deep/ .color-picker-dialog::shadow #scroller {
-    
+
     padding:0px;
   }
 </style>
@@ -38,7 +39,7 @@ and to open the dialog
       width:200px;
       height:200px;
     }
-    
+
     #container {
       margin-top: 0px;
       padding: 0px;
@@ -48,12 +49,12 @@ and to open the dialog
       right:0px;
       bottom:0px;*/
     }
-    
+
     #preview {
       padding: 0px;
       position: relative;
     }
-    
+
     paper-slider {
       width:100%;
     }
@@ -190,7 +191,7 @@ and to open the dialog
   </style>
   <template>
 
-  <paper-dialog id="dialog" 
+  <div id="dialog"
                 entry-animation="scale-up-animation"
                 exit-animation="fade-out-animation"
                 with-backdrop
@@ -257,7 +258,7 @@ and to open the dialog
       </div>
     </div>
 
-  </paper-dialog>
+  </div>
 </template>
   <script>
     (function(){
@@ -366,7 +367,8 @@ and to open the dialog
           sliderValue: {
             type: Number,
             value: 100,
-            observer: 'sliderValueChanged'
+            observer: 'sliderValueChanged',
+            notify : true
           },
           /**
            * *hsv* or *hsl*
@@ -430,7 +432,7 @@ and to open the dialog
             this._initialAlphaValueHackApplied = true;
           });
           window.addEventListener('resize', function(){
-            this.$.dialog.resetFit();
+            //this.$.dialog.resetFit();
           }.bind(this));
         },
         _and: function(a,b){
@@ -546,7 +548,7 @@ and to open the dialog
           if (this.color && this.color['green'])
             this.immediateColor = this.color;
           this.immediateColorChanged();
-          this.$.dialog.open();
+          //this.$.dialog.open();
           if (this._showHuePicker())
             this.drawHuePicker();
         },
@@ -570,8 +572,8 @@ and to open the dialog
           this.advanced = !this.advanced;
         },
         _recenterDialog: function(){
-          if(this.$.dialog.opened)
-            this.$.dialog.center();
+         // if(this.$.dialog.opened)
+            //this.$.dialog.center();
         },
         _setSliders: function(){
           this.async(function(){
