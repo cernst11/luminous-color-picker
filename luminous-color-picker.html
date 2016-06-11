@@ -25,15 +25,15 @@ and to open the dialog
 <link href="../neon-animation/animations/fade-out-animation.html" rel="import">
 <link href="../neon-animation/animations/scale-up-animation.html" rel="import">
 <script src="../whenever.js/whenever.js"></script>
-<link href="paper-color-circle.html" rel="import">
+<link href="luminous-color-circle.html" rel="import">
 
 <style>
-  html /deep/ .color-picker-dialog::shadow #scroller {
+  html /deep/ .luminous-picker-dialog::shadow #scroller {
 
     padding:0px;
   }
 </style>
-<dom-module id="paper-color-picker">
+<dom-module id="luminous-color-picker">
   <style>
     paper-color-circle {
       width:200px;
@@ -210,7 +210,7 @@ and to open the dialog
     </div>
     <div id="detail">
 
-      <paper-color-circle id="picker"  shape="{{shape}}" type="{{type}}" value="{{colorValue}}" color="{{immediateColor}}" hue="{{colorHue}}" lightness="{{colorLightness}}" on-lightness-changed="_setSliders" on-value-changed="_setSliders"></paper-color-circle>
+      <luminous-color-circle id="picker"  shape="{{shape}}" type="{{type}}" value="{{colorValue}}" color="{{immediateColor}}" hue="{{colorHue}}" lightness="{{colorLightness}}" on-lightness-changed="_setSliders" on-value-changed="_setSliders"></luminous-color-circle>
 
       <div id="details">
         <template is="dom-if" if="{{_showValueSlider(shape, type)}}">

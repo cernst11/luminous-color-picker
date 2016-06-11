@@ -22,7 +22,7 @@ There are three different main configurations all 3 elements allow: `circle`, `s
 @demo demo/index.html
 -->
 
-<dom-module id="paper-color-input">
+<dom-module id="luminous-color-input">
 	<template>
 		<style>
 			:host {
