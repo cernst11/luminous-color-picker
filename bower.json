@@ -1,20 +1,19 @@
 {
-  "name": "luminous-color-picker",
-  "homepage": "https://github.com/cernst11/luminous-color-picker",
+  "name": "paper-color-picker",
+  "homepage": "https://github.com/David-Mulder/paper-color-picker",
   "authors": [
     "David Mulder",
-    "Dennis Kugelmann", 
-    "Christian Ernst"
+    "Dennis Kugelmann"
   ],
-  "description": "A color and effect picker for the luminous ws2812 controller",
-  "main": "luminous-color-picker.html",
+  "description": "A paper color picker inspired by Material Design",
+  "main": "paper-color-picker.html",
   "keywords": [
     "web-components",
     "polymer",
     "color-picker",
     "material-design"
   ],
-  "license": "https://github.com/cernst11/luminous-color-picker/blob/master/LICENSE",
+  "license": "https://github.com/David-Mulder/paper-color-picker/blob/master/LICENSE",
   "dependencies": {
     "paper-dialog": "PolymerElements/paper-dialog#~1.0.3",
     "iron-component-page": "PolymerElements/iron-component-page#~1.1.2",
