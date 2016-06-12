@@ -2,11 +2,11 @@
 
 Material Design: Color picker inspired by <a href="http://www.google.com/design/spec/components/pickers.html">Material Design Pickers</a>
 
-`paper-color-picker` is a color picker dialog that can be used to pick colors.
+`luminous-color-picker` is a color picker dialog that can be used to pick colors.
 
 Example:
 
-    <paper-color-picker id="picker"></paper-color-picker>
+    <luminous-color-picker id="picker"></luminous-color-picker>
 
 and to open the dialog
 
@@ -35,7 +35,7 @@ and to open the dialog
 </style>
 <dom-module id="luminous-color-picker">
   <style>
-    paper-color-circle {
+    luminous-color-circle {
       width:200px;
       height:200px;
     }
@@ -86,7 +86,7 @@ and to open the dialog
       margin: 0px;
       padding: 0px;
     }
-    paper-color-circle{
+    luminous-color-circle{
       display: block;
       margin: auto;
     }
@@ -282,7 +282,7 @@ and to open the dialog
       };
 
       Polymer({
-        is: 'paper-color-picker',
+        is: 'luminous-color-picker',
         properties: {
           /**
            * The selected color as an object: `{red, green, blue}`
