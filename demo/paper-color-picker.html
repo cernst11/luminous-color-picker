@@ -4,7 +4,7 @@
 
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
 
-		<title>paper-color-input</title>
+		<title>luminous-color-input</title>
 
 		<script src="../../webcomponentsjs/webcomponents.js"></script>
 
@@ -12,9 +12,9 @@
 		<link href="../../paper-button/paper-button.html" rel="import">
 		<link href="../../paper-input/paper-input.html" rel="import">
 
-		<link href="../paper-color-circle.html" rel="import">
-		<link href="../paper-color-picker.html" rel="import">
-		<link href="../paper-color-input.html" rel="import">
+		<link href="../luminous-color-circle.html" rel="import">
+		<link href="../luminous-color-picker.html" rel="import">
+		<link href="../luminous-color-input.html" rel="import">
 
 		<style shim-shadowdom>
 
@@ -26,7 +26,7 @@
 				-webkit-tap-highlight-color: rgba(0,0,0,0);
 				-webkit-touch-callout: none;
 			}
-			paper-color-circle{
+			luminous-color-circle{
 				width:200px;
 				height:200px;
 			}
@@ -42,68 +42,68 @@
 	<body unresolved>
 
 		<section>
-			<h1><code>&lt;paper-color-picker&gt;</code></h1>
+			<h1><code>&lt;luminous-color-picker&gt;</code></h1>
 
 			<br>
 
 			<div class="buttons">
 
 				<div>
-					<paper-button  onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button  onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Standard dialog
 					</paper-button>
-					<paper-color-picker></paper-color-picker>
+					<luminous-color-picker></luminous-color-picker>
 					<script>
-						document.querySelector('paper-color-picker').open()
+						document.querySelector('luminous-color-picker').open()
 					</script>
 				</div>
 
 				<div>
-					<paper-button onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Square picker
 					</paper-button>
 
-					<paper-color-picker shape="square"></paper-color-picker>
+					<luminous-color-picker shape="square"></luminous-color-picker>
 				</div>
 
 				<div>
-					<paper-button onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Hue box picker
 					</paper-button>
 
-					<paper-color-picker shape="huebox"></paper-color-picker>
+					<luminous-color-picker shape="huebox"></luminous-color-picker>
 				</div>
 
 				<div>
-					<paper-button onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Standard HSV picker
 					</paper-button>
 
-					<paper-color-picker type="hsl"></paper-color-picker>
+					<luminous-color-picker type="hsl"></luminous-color-picker>
 				</div>
 
 				<div>
-					<paper-button onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Standard picker with set color
 					</paper-button>
 
-					<paper-color-picker immediate-color='{"red":255,"green":155,"blue":55}'></paper-color-picker>
+					<luminous-color-picker immediate-color='{"red":255,"green":155,"blue":55}'></luminous-color-picker>
 				</div>
 
 				<div>
-					<paper-button onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Standard picker with alpha
 					</paper-button>
 
-					<paper-color-picker immediate-color='{"red":255,"green":155,"blue":55, "alpha": 1}' allow-alpha></paper-color-picker>
+					<luminous-color-picker immediate-color='{"red":255,"green":155,"blue":55, "alpha": 1}' allow-alpha></luminous-color-picker>
 				</div>
 
 				<div>
-					<paper-button onclick="this.parentElement.querySelector('paper-color-picker').open()">
+					<paper-button onclick="this.parentElement.querySelector('luminous-color-picker').open()">
 						Standard picker with always visible alpha
 					</paper-button>
 
-					<paper-color-picker immediate-color='{"red":124,"green":25,"blue":36, "alpha": 0.5}' allow-alpha always-show-alpha></paper-color-picker>
+					<luminous-color-picker immediate-color='{"red":124,"green":25,"blue":36, "alpha": 0.5}' allow-alpha always-show-alpha></luminous-color-picker>
 				</div>
 
 			</div>
