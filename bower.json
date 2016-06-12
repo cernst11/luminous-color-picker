@@ -6,8 +6,8 @@
     "Dennis Kugelmann",
     "Christian Ernst"
   ],
-  "description": "A paper color picker inspired by Material Design",
-  "main": "paper-color-picker.html",
+  "description": "A material designed color picker for controlling ws2812 leds",
+  "main": "luminous-color-picker.html",
   "keywords": [
     "web-components",
     "polymer",
